@@ -1,0 +1,18 @@
+@use 'font-almarai';
+@use 'font-gemunu';
+@use 'font-firacode';
+
+// Main Colours
+$colors: (
+    "red": #ff5959,
+    "orange": #ffac59,
+    "yellow": #f9ff59,
+    "green": #59ffb7,
+    "blue": #597aff,
+    "purple": #8b59ff,
+);
+
+// Fonts
+$heading-font: 'Almarai', serif;
+$caption-font: 'Gemunu Libre', serif;
+$body-font: 'Fira Code', serif;
