@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+/***
+    The new CSS reset - version 1.11.3 (last updated 25.08.2024)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+a, button {
+  cursor: revert;
+}
+
+ol, ul, menu, summary {
+  list-style: none;
+}
+
+ol {
+  counter-reset: revert;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: unset;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+/*
+END OF CSS RESET
+*/
+h1, h2, h3, h4 {
+  font-family: "Almarai", serif;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 54px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  max-width: 300px;
+}
+
+label {
+  display: block;
+  font-family: "Gemunu Libre", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.form button {
+  font-family: "Almarai", serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffac59;
+  border: none;
+  width: 141px;
+  height: 27px;
+  margin-top: 1em;
+  cursor: pointer;
+  align-self: center;
+}
+
+.form button:hover {
+  background-color: #ff5959;
+}
+
+input {
+  font-family: "Fira Code", serif;
+  font-size: 16px;
+  border: 1px solid #000000;
+  background-color: rgba(179, 179, 179, 0.3);
+  padding: 0.2em;
+  margin-bottom: 1em;
+  border-radius: 3px;
+}
+
+input::placeholder {
+  font-family: "Fira Code", serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=pastel.css.map */

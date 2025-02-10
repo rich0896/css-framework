@@ -1,0 +1,26 @@
+@use 'variables';
+
+// Headings
+h1, h2, h3, h4 {
+    font-family: variables.$heading-font;
+}
+
+h1 {
+    font-size: variables.$font-size-3xl;
+    font-weight: variables.$font-weight-xbold;
+}
+
+h2 {
+    font-size: variables.$font-size-2xl;
+    font-weight: variables.$font-weight-xbold;
+}
+
+h3 {
+    font-size: variables.$font-size-xl;
+    font-weight: variables.$font-weight-bold;
+}
+
+h4 {
+    font-size: variables.$font-size-large;
+    font-weight: variables.$font-weight-bold;
+}

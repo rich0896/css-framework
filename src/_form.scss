@@ -1,0 +1,37 @@
+@use 'variables';
+
+// Form Styles
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    max-width: 300px;
+}
+
+label {
+    display:block;
+    font-family: variables.$caption-font;
+    font-size: variables.$font-size-medium;
+    font-weight: variables.$font-weight-bold;
+    color: map-get(variables.$colors, "black");
+}
+
+// button for submit
+.form button {
+    font-family: variables.$heading-font;
+    font-size: 10px;
+    font-weight: variables.$font-weight-bold;
+    text-align: center;
+    color: map-get(variables.$colors, "black");
+    background-color: map-get(variables.$colors, "warning");
+    border: none;
+    width: 141px;
+    height: 27px;
+    margin-top: 1em;
+    cursor: pointer;
+    align-self: center;
+}
+
+.form button:hover {
+    background-color: map-get(variables.$colors, "red");
+}
