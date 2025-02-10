@@ -1,0 +1,62 @@
+@use 'variables';
+@use 'sass:map';
+
+//lists
+ul{
+    font-family: variables.$body-font;
+    margin: auto;
+    padding: auto;
+    font-size: 16px;
+    list-style: variables.$list-ul;
+    
+}
+
+ol {
+    font-family: variables.$body-font;
+    list-style: variables.$list-ol;
+}
+
+//buttons
+@mixin pastel-btn($btn-bg-color: map-get(variables.$colors, "primary"), $btn-text-color: map-get(variables.$colors, "black")){
+    background: $btn-bg-color;
+    color: $btn-text-color;
+    border: none;
+    font-family: variables.$caption-font;
+    font-size: 16px;
+    text-align: center;
+    min-width: 100px;
+    padding: 8px;
+}
+
+button, button.btn.btn-primary, a.btn.btn-primary{
+    @include pastel-btn();
+}
+
+button.btn.btn-secondary {
+    @include pastel-btn(map-get(variables.$colors, "secondary"), map-get(variables.$colors, "black"));
+}
+
+button.btn.btn-danger {
+    @include pastel-btn(map-get(variables.$colors, "danger"), map-get(variables.$colors, "black"));
+}
+
+button.btn.btn-warning {
+    @include pastel-btn(map-get(variables.$colors, "warning"), map-get(variables.$colors, "black"));
+}
+
+button.btn.btn-info {
+    @include pastel-btn(map-get(variables.$colors, "info"), map-get(variables.$colors, "black"));
+}
+
+//tables
+table{
+    font-family: variables.$body-font;
+    font-size: 15px;
+    width: 100%;
+
+    th, td{
+        border: 1px solid map-get(variables.$colors, "gray");
+        padding: 10px;
+        text-align: center;
+    }
+}
