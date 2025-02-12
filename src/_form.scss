@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'sass:map';
 
 // Form Styles
 .form {
@@ -11,9 +12,9 @@
 label {
     display:block;
     font-family: variables.$caption-font;
-    font-size: variables.$font-size-medium;
+    font-size: variables.$font-size-md;
     font-weight: variables.$font-weight-bold;
-    color: map-get(variables.$colors, "black");
+    color: map.get(variables.$colors, "black");
 }
 
 // button for submit
@@ -22,8 +23,8 @@ label {
     font-size: 10px;
     font-weight: variables.$font-weight-bold;
     text-align: center;
-    color: map-get(variables.$colors, "black");
-    background-color: map-get(variables.$colors, "warning");
+    color: map.get(variables.$colors, "black");
+    background-color: map.get(variables.$colors, "warning");
     border: none;
     width: 141px;
     height: 27px;
@@ -33,5 +34,5 @@ label {
 }
 
 .form button:hover {
-    background-color: map-get(variables.$colors, "red");
+    background-color: map.get(variables.$colors, "red");
 }

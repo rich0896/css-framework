@@ -1,13 +1,17 @@
+// CSS Reset
 @use 'reset';
-@use 'variables';
-@use 'elements';
-@use 'headings';
-@use 'form';
-@use 'inputs';
 
+// Variables
+@use 'variables';
 
 // Colors
 @use 'colors';
 
 // Utilities
 @use 'utilities';
+
+// Core Elements
+@use 'elements';
+@use 'headings';
+@use 'form';
+@use 'inputs';

@@ -6,152 +6,204 @@
 		<title>Pastel CSS Framework Test</title>
 		<link rel="stylesheet" href="./css/pastel.css" />
 	</head>
-	<body>
+	<body class="display-f fd-column ml-5 mr-5">
+		<header class="bg-primary text-white pt-1 pl-2 mb-2">
+			<h1>Welcome to Pastel CSS!</h1>
+			<p>
+				This page is a demonstration of different possibilities using the Pastel
+				CSS Framework.
+			</p>
+			<div class="pt-1 display-f fd-row-reverse">
+				<button class="btn btn-primary">Blue Button</button>
+				<button class="btn btn-secondary">Green Button</button>
+				<button class="btn btn-danger">Red Button</button>
+				<button class="btn btn-info">Purple Button</button>
+				<button class="btn btn-warning">Orange Button</button>
+			</div>
+		</header>
 
-		<ul>
-			<li>Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-			<li>Item 4</li>
-		</ul>
+		<div class="display-f fd-column mb-2 text-center w-half as-center">
+			<h3 class="text-underline text-uppercase">Text</h3>
+			<!-- headings 1 to 4 -->
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<!-- paragraph -->
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+				corporis esse ullam excepturi voluptatum, ab, delectus debitis
+				distinctio repudiandae beatae doloremque facere dicta optio perferendis?
+				Reprehenderit et similique suscipit delectus!
+			</p>
+		</div>
 
-		<ol>
-			<li>Home</li>
-			<li>About</li>
-			<li>Product</li>
-			<li>Contact</li>
-		</ol>
+		<div class="display-f fd-row mb-2 jc-around">
+			<div>
+				<h3 class="text-underline text-uppercase">Unordered List</h3>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="text-underline text-uppercase">Ordered List</h3>
+				<ol>
+					<li>Home</li>
+					<li>About</li>
+					<li>Product</li>
+					<li>Contact</li>
+				</ol>
+			</div>
+		</div>
 
-		<button class="btn btn-primary">Click me!</button>
-		<button class="btn btn-secondary">Click me!</button>
-		<button class="btn btn-danger">Click me!</button>
-		<button class="btn btn-info">Click me!</button>
-		<button class="btn btn-warning">Click me!</button>
+		<div class="mb-2 display-f fd-row jc-around">
+			<div>
+				<h3 class="text-underline text-uppercase">Table</h3>
+				<table>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Year of Birth</th>
+					</tr>
+					<tr>
+						<td>John</td>
+						<td>Doe</td>
+						<td>1990</td>
+					</tr>
+					<tr>
+						<td>Mary</td>
+						<td>Doe</td>
+						<td>1991</td>
+					</tr>
+					<tr>
+						<td>Jess</td>
+						<td>Doe</td>
+						<td>1992</td>
+					</tr>
+					<tr>
+						<td>Miss</td>
+						<td>Doe</td>
+						<td>1993</td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<h3 class="text-underline text-uppercase">Form</h3>
+				<!-- Form with title, name, phone number, email, submit button -->
+				<form class="form">
+					<label for="name">Name</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Enter your name"
+					/>
 
-		<a href="#" class="btn btn-primary"> Click me!</a>
+					<label for="phone">Phone Number</label>
+					<input
+						type="tel"
+						id="phone"
+						name="phone"
+						placeholder="Enter your phone number"
+					/>
 
-		<table>
-			<tr>
-				<th>First Name</th>
-				<th>Last Name</th>
-				<th>Year of Birth</th>
-			</tr>
-			<tr>
-				<td>John</td>
-				<td>Doe</td>
-				<td>1990</td>
-			</tr>
-			<tr>
-				<td>Mary</td>
-				<td>Doe</td>
-				<td>1991</td>
-			</tr>
-			<tr>
-				<td>Jess</td>
-				<td>Doe</td>
-				<td>1992</td>
-			</tr>
-			<tr>
-				<td>Miss</td>
-				<td>Doe</td>
-				<td>1993</td>
-			</tr>
-		</table>
+					<label for="email">Email</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Enter your email"
+					/>
 
-		<!-- headings 1 to 4 -->
-		<h1>Heading 1</h1>
-		<h2>Heading 2</h2>
-		<h3>Heading 3</h3>
-		<h4>Heading 4</h4>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
 
-		<!-- Form with title, name, phone number, email, submit button -->
-		<form class="form">
-			<h4>Form</h4>
-			<label for="name">Name</label>
-			<input type="text" id="name" name="name" placeholder="Enter your name">
-		
-			<label for="phone">Phone Number</label>
-			<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-		
-			<label for="email">Email</label>
-			<input type="email" id="email" name="email" placeholder="Enter your email">
-		
-			<button type="submit">Submit</button>
-		</form>
-
-		<div class="container">
-			<span class="bg-purple-dark-8 text-white fw-bold">purple dark 8</span>
-			<span class="bg-purple-dark-6 text-white fw-bold">purple dark 6</span>
-			<span class="bg-purple-dark-4 text-white fw-semibold">purple dark 4</span>
-			<span class="bg-purple-dark-2 text-white fw-semibold">purple dark 2</span>
-			<span class="bg-purple text-white">purple</span>
-			<span class="bg-purple-light-2 text-black fw-light">purple light 2</span>
-			<span class="bg-purple-light-4 text-black fw-light">purple light 4</span>
-			<span class="bg-purple-light-6 text-black fw-light">purple light 6</span>
-			<span class="bg-purple-light-8 text-black fw-light">purple light 8</span>
-
-			<br /><br />
-
-			<span class="bg-primary-dark-8 text-white font-2xl">blue dark 8</span>
-			<span class="bg-primary-dark-6 text-white font-xl">blue dark 6</span>
-			<span class="bg-primary-dark-4 text-white font-lg">blue dark 4</span>
-			<span class="bg-primary-dark-2 text-white font-md">blue dark 2</span>
-			<span class="bg-primary text-white font-sm">blue</span>
-			<span class="bg-primary-light-2 text-black">blue light 2</span>
-			<span class="bg-primary-light-4 text-black">blue light 4</span>
-			<span class="bg-primary-light-6 text-black">blue light 6</span>
-			<span class="bg-primary-light-8 text-black">blue light 8</span>
-
-			<br /><br />
-
-			<span class="bg-secondary-dark-8 text-white br">green dark 8</span>
-			<span class="bg-secondary-dark-6 text-white br-sm">green dark 6</span>
-			<span class="bg-secondary-dark-4 text-white br-lg">green dark 4</span>
-			<span class="bg-secondary-dark-2 text-white br-full">green dark 2</span>
-			<span class="bg-secondary text-white">green</span>
-			<span class="bg-secondary-light-2 text-black">green light 2</span>
-			<span class="bg-secondary-light-4 text-black">green light 4</span>
-			<span class="bg-secondary-light-6 text-black">green light 6</span>
-			<span class="bg-secondary-light-8 text-black">green light 8</span>
-
-			<br /><br />
-
-			<span class="bg-yellow-dark-8 text-white">yellow dark 8</span>
-			<span class="bg-yellow-dark-6 text-white">yellow dark 6</span>
-			<span class="bg-yellow-dark-4 text-white">yellow dark 4</span>
-			<span class="bg-yellow-dark-2 text-white">yellow dark 2</span>
-			<span class="bg-yellow text-black">yellow</span>
-			<span class="bg-yellow-light-2 text-black">yellow light 2</span>
-			<span class="bg-yellow-light-4 text-black">yellow light 4</span>
-			<span class="bg-yellow-light-6 text-black">yellow light 6</span>
-			<span class="bg-yellow-light-8 text-black">yellow light 8</span>
-
-			<br /><br />
-
-			<span class="bg-orange-dark-8 text-white">orange dark 8</span>
-			<span class="bg-orange-dark-6 text-white">orange dark 6</span>
-			<span class="bg-orange-dark-4 text-white">orange dark 4</span>
-			<span class="bg-orange-dark-2 text-white">orange dark 2</span>
-			<span class="bg-orange text-white">orange</span>
-			<span class="bg-orange-light-2 text-black">orange light 2</span>
-			<span class="bg-orange-light-4 text-black">orange light 4</span>
-			<span class="bg-orange-light-6 text-black">orange light 6</span>
-			<span class="bg-orange-light-8 text-black">orange light 8</span>
-
-			<br /><br />
-
-			<span class="bg-red-dark-8 text-white">red dark 8</span>
-			<span class="bg-red-dark-6 text-white">red dark 6</span>
-			<span class="bg-red-dark-4 text-white">red dark 4</span>
-			<span class="bg-red-dark-2 text-white">red dark 2</span>
-			<span class="bg-red text-white">red</span>
-			<span class="bg-red-light-2 text-black">red light 2</span>
-			<span class="bg-red-light-4 text-black">red light 4</span>
-			<span class="bg-red-light-6 text-black">red light 6</span>
-			<span class="bg-red-light-8 text-black">red light 8</span>
-
-			<br /><br />
-			<a href="#" class="text-primary text-hover-blue-light-3">hover me</a>
+		<div class="mb-2">
+			<h3 class="text-underline text-uppercase">Available Colors</h3>
+			<table>
+				<tr>
+					<th>Dark 8</th>
+					<th>Dark 6</th>
+					<th>Dark 4</th>
+					<th>Dark 2</th>
+					<th>Normal</th>
+					<th>Light 2</th>
+					<th>Light 4</th>
+					<th>Light 6</th>
+					<th>Light 8</th>
+				</tr>
+				<tr>
+					<td class="bg-purple-dark-8 text-white">Purple</td>
+					<td class="bg-purple-dark-6 text-white">Purple</td>
+					<td class="bg-purple-dark-4 text-white">Purple</td>
+					<td class="bg-purple-dark-2 text-white">Purple</td>
+					<td class="bg-purple text-white">Purple</td>
+					<td class="bg-purple-light-2 text-black">Purple</td>
+					<td class="bg-purple-light-4 text-black">Purple</td>
+					<td class="bg-purple-light-6 text-black">Purple</td>
+					<td class="bg-purple-light-8 text-black">Purple</td>
+				</tr>
+				<tr>
+					<td class="bg-primary-dark-8 text-white">Blue</td>
+					<td class="bg-primary-dark-6 text-white">Blue</td>
+					<td class="bg-primary-dark-4 text-white">Blue</td>
+					<td class="bg-primary-dark-2 text-white">Blue</td>
+					<td class="bg-primary text-white">Blue</td>
+					<td class="bg-primary-light-2 text-black">Blue</td>
+					<td class="bg-primary-light-4 text-black">Blue</td>
+					<td class="bg-primary-light-6 text-black">Blue</td>
+					<td class="bg-primary-light-8 text-black">Blue</td>
+				</tr>
+				<tr>
+					<td class="bg-secondary-dark-8 text-white">Green</td>
+					<td class="bg-secondary-dark-6 text-white">Green</td>
+					<td class="bg-secondary-dark-4 text-white">Green</td>
+					<td class="bg-secondary-dark-2 text-white">Green</td>
+					<td class="bg-secondary text-white">Green</td>
+					<td class="bg-secondary-light-2 text-black">Green</td>
+					<td class="bg-secondary-light-4 text-black">Green</td>
+					<td class="bg-secondary-light-6 text-black">Green</td>
+					<td class="bg-secondary-light-8 text-black">Green</td>
+				</tr>
+				<tr>
+					<td class="bg-yellow-dark-8 text-white">Yellow</td>
+					<td class="bg-yellow-dark-6 text-white">Yellow</td>
+					<td class="bg-yellow-dark-4 text-white">Yellow</td>
+					<td class="bg-yellow-dark-2 text-white">Yellow</td>
+					<td class="bg-yellow text-black">Yellow</td>
+					<td class="bg-yellow-light-2 text-black">Yellow</td>
+					<td class="bg-yellow-light-4 text-black">Yellow</td>
+					<td class="bg-yellow-light-6 text-black">Yellow</td>
+					<td class="bg-yellow-light-8 text-black">Yellow</td>
+				</tr>
+				<tr>
+					<td class="bg-orange-dark-8 text-white">Orange</td>
+					<td class="bg-orange-dark-6 text-white">Orange</td>
+					<td class="bg-orange-dark-4 text-white">Orange</td>
+					<td class="bg-orange-dark-2 text-white">Orange</td>
+					<td class="bg-orange text-white">Orange</td>
+					<td class="bg-orange-light-2 text-black">Orange</td>
+					<td class="bg-orange-light-4 text-black">Orange</td>
+					<td class="bg-orange-light-6 text-black">Orange</td>
+					<td class="bg-orange-light-8 text-black">Orange</td>
+				</tr>
+				<tr>
+					<td class="bg-red-dark-8 text-white">Red</td>
+					<td class="bg-red-dark-6 text-white">Red</td>
+					<td class="bg-red-dark-4 text-white">Red</td>
+					<td class="bg-red-dark-2 text-white">Red</td>
+					<td class="bg-red text-white">Red</td>
+					<td class="bg-red-light-2 text-black">Red</td>
+					<td class="bg-red-light-4 text-black">Red</td>
+					<td class="bg-red-light-6 text-black">Red</td>
+					<td class="bg-red-light-8 text-black">Red</td>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>

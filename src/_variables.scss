@@ -10,7 +10,7 @@ $colors: (
     "warning": #ffac59,
     "info": #8b59ff,
     "red": #ff5959,
-    "orange": #050505,
+    "orange": #ffac59,
     "yellow": #f9ff59,
     "green": #59ffb7,
     "blue": #597aff,
@@ -30,9 +30,9 @@ $list-ul: square;
 $list-ol: lower-roman;
 
 // Font Sizes
-$font-size-small: 16px;
-$font-size-medium: 30px;
-$font-size-large: 32px;
+$font-size-sm: 16px;
+$font-size-md: 30px;
+$font-size-lg: 32px;
 $font-size-xl: 40px;
 $font-size-2xl: 54px;
 $font-size-3xl: 64px;
@@ -42,12 +42,6 @@ $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 $font-weight-xbold: 800;
-
-$base-font-size: 1rem !default;
-$font-size-sm: $base-font-size * 0.75 !default;
-$font-size-lg: $base-font-size * 1.25 !default;
-$font-size-xl: $base-font-size * 1.5 !default;
-$font-size-2xl: $base-font-size * 2 !default;
 
 // Sizing
 $base-padding: 0.75rem !default;

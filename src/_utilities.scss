@@ -149,11 +149,50 @@ $utilities: (
       "i-b": inline-block
     )
   ),
+  "flex-direction": (
+    "prefix": "fd",
+    "values": (
+      "row": row,
+      "row-reverse": row-reverse,
+      "column": column,
+      "column-reverse": column-reverse
+    )
+  ),
+  "justify-content": (
+    "prefix": "jc",
+    "values": (
+      "start": flex-start,
+      "end": flex-end,
+      "center": center,
+      "between": space-between,
+      "around": space-around
+    )
+  ),
+  "align-items": (
+    "prefix": "ai",
+    "values": (
+      "start": flex-start,
+      "end": flex-end,
+      "center": center,
+      "baseline": baseline,
+      "stretch": stretch
+    )
+  ),
+  "align-self": (
+    "prefix": "as",
+    "values": (
+      "start": flex-start,
+      "end": flex-end,
+      "center": center,
+      "baseline": baseline,
+      "stretch": stretch
+    )
+  ),
   "font-size": (
     "prefix": "font",
     "values": (
       "sm": $font-size-sm,
-      "md": $base-font-size,
+      "md": $font-size-md,
       "lg": $font-size-lg,
       "xl": $font-size-xl,
       "2xl": $font-size-2xl
@@ -167,6 +206,46 @@ $utilities: (
       "medium": 500,
       "semibold": 600,
       "bold": 700
+    )
+  ),
+  "text-align": (
+    "prefix": "text",
+    "values": (
+      "left": left,
+      "center": center,
+      "right": right,
+      "justify": justify
+    )
+  ),
+  "text-transform": (
+    "prefix": "text",
+    "values": (
+      "uppercase": uppercase,
+      "lowercase": lowercase,
+      "capitalize": capitalize,
+      "none": none
+    )
+  ),
+  "text-decoration": (
+    "prefix": "text",
+    "values": (
+      "underline": underline,
+      "line-through": line-through,
+      "overline": overline,
+      "none": none
+    )
+  ),
+  "width": (
+    "prefix": "w",
+    "values": (
+      "auto": auto,
+      "full": 100%,
+      "screen": 100vw,
+      "half": 50%,
+      "third": 33.333333%,
+      "quarter": 25%,
+      "fifth": 20%,
+      "sixth": 16.666667%,
     )
   ),
 );

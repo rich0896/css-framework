@@ -93,195 +93,6 @@ meter {
 /*
 END OF CSS RESET
 */
-
-ul {
-  font-family: "Fira Code", serif;
-  list-style: square;
-  margin: 0 0 0 30px;
-  padding: 30px 0 0 0;
-}
-
-ol {
-  font-family: "Fira Code", serif;
-  list-style: lower-roman;
-  margin: 0 0 10px 30px;
-  padding: 30px 0px 0 0;
-}
-
-button, button.btn.btn-primary{
-  background: #597aff;
-  color: #000000;
-  border: none;
-  font-family: "Gemunu Libre", serif;
-  font-size: 16px;
-  text-align: center;
-  min-width: 100px;
-  padding: 8px 20px;
-  margin: 0 0 0 30px;
-}
-
-button.btn.btn-primary:hover{
-  background: #59ffb7;
-}
-
-a.btn.btn-primary{
-  background: none;
-  color: #597aff;
-  font-family: "Gemunu Libre", serif;
-  font-size: 16px;
-  padding: 8px 20px;
-}
-a.btn.btn-primary:hover{
-  color: #59ffb7;
-}
-
-button.btn.btn-secondary, a.btn.btn-secondary {
-  background: #59ffb7;
-  color: #000000;
-  border: none;
-  font-family: "Gemunu Libre", serif;
-  font-size: 16px;
-  text-align: center;
-  min-width: 100px;
-  padding: 8px;
-}
-button.btn.btn-secondary:hover{
-  background: #597aff;
-}
-
-button.btn.btn-danger {
-  background: #ff5959;
-  color: #000000;
-  border: none;
-  font-family: "Gemunu Libre", serif;
-  font-size: 16px;
-  text-align: center;
-  min-width: 100px;
-  padding: 8px;
-}
-button.btn.btn-danger:hover{
-  background: #597aff;
-}
-
-button.btn.btn-warning {
-  background: #ffac59;
-  color: #000000;
-  border: none;
-  font-family: "Gemunu Libre", serif;
-  font-size: 16px;
-  text-align: center;
-  min-width: 100px;
-  padding: 8px;
-}
-button.btn.btn-warning:hover{
-  background: #597aff;
-}
-
-button.btn.btn-info, a.btn.btn-info {
-  background: #8b59ff;
-  color: #000000;
-  border: none;
-  font-family: "Gemunu Libre", serif;
-  font-size: 16px;
-  text-align: center;
-  min-width: 100px;
-  padding: 8px;
-}
-button.btn.btn-info:hover{
-  background: #597aff;
-}
-
-table {
-  font-family: "Fira Code", serif;
-  font-size: 15px;
-  border: solid 1px #000000;
-  width: 50%;
-  margin: 10px 0 0 30px;
-
-  th, td {
-    border: solid 1px #000000;
-    padding: 10px;
-  }
-
-  th{
-    background-color: #597aff;
-    color: #ffffff;
-    font-weight: bold;
-  }
-
-h1, h2, h3, h4 {
-  font-family: "Almarai", serif;
-}
-
-h1 {
-  font-size: 64px;
-  font-weight: 800;
-}
-
-h2 {
-  font-size: 54px;
-  font-weight: 800;
-}
-
-h3 {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  max-width: 300px;
-}
-
-label {
-  display: block;
-  font-family: "Gemunu Libre", serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.form button {
-  font-family: "Almarai", serif;
-  font-size: 10px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-  background-color: #ffac59;
-  border: none;
-  width: 141px;
-  height: 27px;
-  margin-top: 1em;
-  cursor: pointer;
-  align-self: center;
-}
-
-.form button:hover {
-  background-color: #ff5959;
-}
-
-input {
-  font-family: "Fira Code", serif;
-  font-size: 16px;
-  border: 1px solid #000000;
-  background-color: rgba(179, 179, 179, 0.3);
-  padding: 0.2em;
-  margin-bottom: 1em;
-  border-radius: 3px;
-}
-
-input::placeholder {
-  font-family: "Fira Code", serif;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.5);
-
 .text-primary {
   color: #597aff;
 }
@@ -3366,24 +3177,100 @@ input::placeholder {
   display: inline-block;
 }
 
+.fd-row {
+  flex-direction: row;
+}
+
+.fd-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.fd-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-baseline {
+  align-items: baseline;
+}
+
+.ai-stretch {
+  align-items: stretch;
+}
+
+.as-start {
+  align-self: flex-start;
+}
+
+.as-end {
+  align-self: flex-end;
+}
+
+.as-center {
+  align-self: center;
+}
+
+.as-baseline {
+  align-self: baseline;
+}
+
+.as-stretch {
+  align-self: stretch;
+}
+
 .font-sm {
-  font-size: 0.75rem;
+  font-size: 16px;
 }
 
 .font-md {
-  font-size: 1rem;
+  font-size: 30px;
 }
 
 .font-lg {
-  font-size: 1.25rem;
+  font-size: 32px;
 }
 
 .font-xl {
-  font-size: 1.5rem;
+  font-size: 40px;
 }
 
 .font-2xl {
-  font-size: 2rem;
+  font-size: 54px;
 }
 
 .fw-light {
@@ -3404,6 +3291,263 @@ input::placeholder {
 
 .fw-bold {
   font-weight: 700;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-none {
+  text-transform: none;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-overline {
+  text-decoration: overline;
+}
+
+.text-none {
+  text-decoration: none;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.w-third {
+  width: 33.333333%;
+}
+
+.w-quarter {
+  width: 25%;
+}
+
+.w-fifth {
+  width: 20%;
+}
+
+.w-sixth {
+  width: 16.666667%;
+}
+
+html ul {
+  font-family: "Fira Code", serif;
+  list-style: square;
+  list-style-position: inside;
+}
+
+html ol {
+  font-family: "Fira Code", serif;
+  list-style: lower-roman;
+  list-style-position: inside;
+}
+
+button, button.btn.btn-primary, a.btn.btn-primary {
+  background: #597aff;
+  color: #ffffff;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px;
+  cursor: pointer;
+}
+button:hover, button.btn.btn-primary:hover, a.btn.btn-primary:hover {
+  background: rgb(140, 162.8614457831, 255);
+}
+
+button.btn.btn-secondary {
+  background: #59ffb7;
+  color: #000000;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px;
+  cursor: pointer;
+}
+button.btn.btn-secondary:hover {
+  background: rgb(140, 255, 205.1204819277);
+}
+
+button.btn.btn-danger {
+  background: #ff5959;
+  color: #000000;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px;
+  cursor: pointer;
+}
+button.btn.btn-danger:hover {
+  background: #ff8c8c;
+}
+
+button.btn.btn-warning {
+  background: #ffac59;
+  color: #000000;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px;
+  cursor: pointer;
+}
+button.btn.btn-warning:hover {
+  background: rgb(255, 197.5, 140);
+}
+
+button.btn.btn-info {
+  background: #8b59ff;
+  color: #ffffff;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px;
+  cursor: pointer;
+}
+button.btn.btn-info:hover {
+  background: rgb(174.6385542169, 140, 255);
+}
+
+html table {
+  font-family: "Fira Code", serif;
+  font-size: 15px;
+  width: 100%;
+}
+html table th, html table td {
+  border: 1px solid #b3b3b3;
+  padding: 10px;
+  text-align: center;
+}
+html table th {
+  background-color: #597aff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Almarai", serif;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 54px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  max-width: 300px;
+}
+
+label {
+  display: block;
+  font-family: "Gemunu Libre", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.form button {
+  font-family: "Almarai", serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffac59;
+  border: none;
+  width: 141px;
+  height: 27px;
+  margin-top: 1em;
+  cursor: pointer;
+  align-self: center;
+}
+
+.form button:hover {
+  background-color: #ff5959;
+}
+
+input {
+  font-family: "Fira Code", serif;
+  font-size: 16px;
+  border: 1px solid #000000;
+  background-color: rgba(179, 179, 179, 0.3);
+  padding: 0.2em;
+  margin-bottom: 1em;
+  border-radius: 3px;
+}
+
+input::placeholder {
+  font-family: "Fira Code", serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=pastel.css.map */

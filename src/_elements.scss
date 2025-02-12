@@ -1,23 +1,22 @@
 @use 'variables';
 @use 'sass:map';
+@use 'sass:color';
 
 //lists
-ul{
+html ul {
     font-family: variables.$body-font;
-    margin: auto;
-    padding: auto;
-    font-size: 16px;
     list-style: variables.$list-ul;
-    
+    list-style-position: inside;
 }
 
-ol {
+html ol {
     font-family: variables.$body-font;
     list-style: variables.$list-ol;
+    list-style-position: inside;
 }
 
 //buttons
-@mixin pastel-btn($btn-bg-color: map-get(variables.$colors, "primary"), $btn-text-color: map-get(variables.$colors, "black")){
+@mixin pastel-btn($btn-bg-color: map.get(variables.$colors, "primary"), $btn-text-color: map.get(variables.$colors, "white")){
     background: $btn-bg-color;
     color: $btn-text-color;
     border: none;
@@ -26,6 +25,11 @@ ol {
     text-align: center;
     min-width: 100px;
     padding: 8px;
+    cursor: pointer;
+
+    &:hover{
+        background: color.adjust($btn-bg-color, $lightness: 10%);
+    }
 }
 
 button, button.btn.btn-primary, a.btn.btn-primary{
@@ -33,30 +37,36 @@ button, button.btn.btn-primary, a.btn.btn-primary{
 }
 
 button.btn.btn-secondary {
-    @include pastel-btn(map-get(variables.$colors, "secondary"), map-get(variables.$colors, "black"));
+    @include pastel-btn(map.get(variables.$colors, "secondary"), map.get(variables.$colors, "black"));
 }
 
 button.btn.btn-danger {
-    @include pastel-btn(map-get(variables.$colors, "danger"), map-get(variables.$colors, "black"));
+    @include pastel-btn(map.get(variables.$colors, "danger"), map.get(variables.$colors, "black"));
 }
 
 button.btn.btn-warning {
-    @include pastel-btn(map-get(variables.$colors, "warning"), map-get(variables.$colors, "black"));
+    @include pastel-btn(map.get(variables.$colors, "warning"), map.get(variables.$colors, "black"));
 }
 
 button.btn.btn-info {
-    @include pastel-btn(map-get(variables.$colors, "info"), map-get(variables.$colors, "black"));
+    @include pastel-btn(map.get(variables.$colors, "info"), map.get(variables.$colors, "white"));
 }
 
 //tables
-table{
+html table {
     font-family: variables.$body-font;
     font-size: 15px;
     width: 100%;
 
     th, td{
-        border: 1px solid map-get(variables.$colors, "gray");
+        border: 1px solid map.get(variables.$colors, "gray");
         padding: 10px;
         text-align: center;
+    }
+
+    th {
+        background-color: #597aff;
+        color: #ffffff;
+        font-weight: bold;
     }
 }
