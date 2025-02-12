@@ -93,6 +93,80 @@ meter {
 /*
 END OF CSS RESET
 */
+
+h1, h2, h3, h4 {
+  font-family: "Almarai", serif;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 54px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  max-width: 300px;
+}
+
+label {
+  display: block;
+  font-family: "Gemunu Libre", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.form button {
+  font-family: "Almarai", serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffac59;
+  border: none;
+  width: 141px;
+  height: 27px;
+  margin-top: 1em;
+  cursor: pointer;
+  align-self: center;
+}
+
+.form button:hover {
+  background-color: #ff5959;
+}
+
+input {
+  font-family: "Fira Code", serif;
+  font-size: 16px;
+  border: 1px solid #000000;
+  background-color: rgba(179, 179, 179, 0.3);
+  padding: 0.2em;
+  margin-bottom: 1em;
+  border-radius: 3px;
+}
+
+input::placeholder {
+  font-family: "Fira Code", serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+=======
 .text-primary {
   color: #597aff;
 }
