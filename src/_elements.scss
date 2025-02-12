@@ -59,7 +59,7 @@ html table {
     width: 100%;
 
     th, td{
-        border: 1px solid map.get(variables.$colors, "gray");
+        border: 1px solid map.get(variables.$colors, "black");
         padding: 10px;
         text-align: center;
     }
