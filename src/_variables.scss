@@ -24,3 +24,15 @@ $colors: (
 $heading-font: 'Almarai', serif;
 $caption-font: 'Gemunu Libre', serif;
 $body-font: 'Fira Code', serif;
+
+// Font Sizes
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.25 !default;
+$font-size-xl: $base-font-size * 1.5 !default;
+$font-size-2xl: $base-font-size * 2 !default;
+
+// Sizing
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+$base-border-radius: 20px !default;
