@@ -94,6 +94,121 @@ meter {
 END OF CSS RESET
 */
 
+ul {
+  font-family: "Fira Code", serif;
+  list-style: square;
+  margin: 0 0 0 30px;
+  padding: 30px 0 0 0;
+}
+
+ol {
+  font-family: "Fira Code", serif;
+  list-style: lower-roman;
+  margin: 0 0 10px 30px;
+  padding: 30px 0px 0 0;
+}
+
+button, button.btn.btn-primary{
+  background: #597aff;
+  color: #000000;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px 20px;
+  margin: 0 0 0 30px;
+}
+
+button.btn.btn-primary:hover{
+  background: #59ffb7;
+}
+
+a.btn.btn-primary{
+  background: none;
+  color: #597aff;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+a.btn.btn-primary:hover{
+  color: #59ffb7;
+}
+
+button.btn.btn-secondary, a.btn.btn-secondary {
+  background: #59ffb7;
+  color: #000000;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px;
+}
+button.btn.btn-secondary:hover{
+  background: #597aff;
+}
+
+button.btn.btn-danger {
+  background: #ff5959;
+  color: #000000;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px;
+}
+button.btn.btn-danger:hover{
+  background: #597aff;
+}
+
+button.btn.btn-warning {
+  background: #ffac59;
+  color: #000000;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px;
+}
+button.btn.btn-warning:hover{
+  background: #597aff;
+}
+
+button.btn.btn-info, a.btn.btn-info {
+  background: #8b59ff;
+  color: #000000;
+  border: none;
+  font-family: "Gemunu Libre", serif;
+  font-size: 16px;
+  text-align: center;
+  min-width: 100px;
+  padding: 8px;
+}
+button.btn.btn-info:hover{
+  background: #597aff;
+}
+
+table {
+  font-family: "Fira Code", serif;
+  font-size: 15px;
+  border: solid 1px #000000;
+  width: 50%;
+  margin: 10px 0 0 30px;
+
+  th, td {
+    border: solid 1px #000000;
+    padding: 10px;
+  }
+
+  th{
+    background-color: #597aff;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
 h1, h2, h3, h4 {
   font-family: "Almarai", serif;
 }
@@ -166,7 +281,7 @@ input::placeholder {
   font-family: "Fira Code", serif;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.5);
-=======
+
 .text-primary {
   color: #597aff;
 }
